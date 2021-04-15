@@ -1,7 +1,7 @@
 from django.db import models
 
 class Balconista(models.Model)
-    codigo = models.AutoField(),
+    codigo = models.CharField(max_length=100),
     nome = models.CharField(max_length=100)
     rg = models.CharField(max_length=100)
     cpf = models.CharField(max_length=100)
