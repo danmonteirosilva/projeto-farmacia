@@ -1,6 +1,6 @@
 from django.db import models
 
-class Balconista(models.Model)
+class Balconista(models.Model):
     codigo = models.CharField(max_length=100),
     nome = models.CharField(max_length=100)
     rg = models.CharField(max_length=100)
