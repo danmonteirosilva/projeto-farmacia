@@ -1,11 +1,13 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-import datetime
+from .models import Balconista
+from django.views.generic import CreateView
+from django.urls import reverse_lazy
 
-def home (request):
-    now = datetime.datetime.now()
-    html = "<html><body>It is now %s.</body></html>" % now
-    return render()
+class BalconistaCreateView(CreateView):
+    model = Balconista
+    template_name = 'balconista.html'
 
+    fields = '__all__'
 
-# Create your views here
+    def get_success_url(self):
+        return reverse_lazy('Balconista')

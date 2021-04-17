@@ -44,6 +44,8 @@ MY_APPS = [
 ]
 
 THIRDS_APPS = [
+    'bootstrapform',
+    'bootstrap4',
 
 
 ]
