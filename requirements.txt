@@ -1,0 +1,14 @@
+asgiref==3.3.4
+bootstrap4==0.1.0
+Django==3.2
+django-bootstrap-form==3.4
+Jinja2==2.11.3
+MarkupSafe==1.1.1
+pytz==2021.1
+PyYAML==5.4.1
+render==1.0.0
+setuptools==40.8.0
+shortcuts==0.11.0
+sqlparse==0.4.1
+toml==0.10.2
+typing-extensions==3.7.4.3
