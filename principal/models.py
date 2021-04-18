@@ -34,3 +34,7 @@ class Cliente(models.Model):
     cep = models.CharField(max_length=15, blank=False, null=False, verbose_name='CEP')
     email = models.CharField(max_length=255, blank=False, null=False, verbose_name='E-mail')
     foto = models.FileField(upload_to='foto de cadastro', verbose_name='Foto de cadastro do cliente')
+
+class Produto(models.Model):
+    nome_produto = models.CharField(max_length=255, blank=False, null=False, verbose_name='Nome do Produto')
+    foto = models.ImageField(null=True, blank=True)
