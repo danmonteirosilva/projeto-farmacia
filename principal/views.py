@@ -27,4 +27,4 @@ class FarmaceuticoCreateView(CreateView):
 
 class BalconistaListView(ListView):
     model = Balconista
-    template_name = 'listar/balconista'
+    template_name = 'listar_balconista'
