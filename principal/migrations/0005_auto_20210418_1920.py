@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Cliente',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('nome', models.CharField(max_length=255, verbose_name='Nome do Balconista')),
                 ('rg', models.CharField(max_length=15, verbose_name='RG')),
                 ('cpf', models.CharField(max_length=15, verbose_name='CPF')),
