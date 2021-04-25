@@ -7,7 +7,7 @@ from django.urls import reverse_lazy
 
 class BalconistaCreateView(CreateView):
     model = Balconista
-    template_name = 'balconista.html'
+    template_name = 'cadastra_balconista.html'
 
     fields = '__all__'
 
