@@ -115,3 +115,23 @@ class Entregador(models.Model):
     class Meta:
         verbose_name_plural = 'Entregadores'
 
+
+class Parceiro(models.Model):
+    cnpj = models.CharField(max_length=14, blank=False, null=False, verbose_name='CNPJ')
+    nome_fantasia = models.CharField(max_length=255, blank=False, null=False, verbose_name='Nome Fantasia')
+    razao_social = models.CharField(max_length=255, blank=False, null=False, verbose_name='Razão Social')
+    endereco = models.CharField(max_length=255, null=False, blank=False, verbose_name='Endereço')
+    telefone = models.CharField(max_length=12, blank=False, null=False, verbose_name='Telefone')
+    cep = models.CharField(max_length=15, blank=False, null=False, verbose_name='CEP')
+    email = models.CharField(max_length=255, blank=False, null=False, verbose_name='E-mail')
+    descricao = models.TextField(blank=True, null=True, verbose_name="Descrição")
+
+
+class Repositorio_contrato(models.Model):
+    nome = models.CharField(max_length=255, blank=False, null=False, verbose_name='Nome do Contrato')
+    contrato = models.FileField(upload_to='arquivo de contrato', verbose_name='Selecionar o contrato')
+    descricao = models.TextField(blank=True, null=True, verbose_name="Descrição")
+
+    class Meta:
+        verbose_name = 'Contrato'
+        verbose_name_plural = 'Repositório de Contratos'
