@@ -82,3 +82,22 @@ class Compra(models.Model):
     data_compra = models.DateField(auto_now_add=True, blank=True, null=False)
     hora_compra = models.TimeField(auto_now_add=True, blank=True, null=False)
     data_hora_compra = models.DateTimeField(auto_now_add=True, blank=True, null=False)
+
+
+class Pagamento(models.Model):
+    descricao = models.CharField(max_length=255, null=False, blank=False, verbose_name='Descrição do Pagamento')
+    valor = models.DecimalField(max_digits=12, decimal_places=2, null=False, blank=False, verbose_name='Valor')
+    comprovante = models.FileField(upload_to='foto da receita', verbose_name='Fazer upload do comprovante')
+    data_pagamento = models.DateField(auto_now_add=True, blank=True, null=False)
+    hora_pagamento = models.TimeField(auto_now_add=True, blank=True, null=False)
+
+
+class Contas_a_pagar(models.Model):
+    titulo = models.CharField(max_length=255, null=False, blank=False, verbose_name='Título')
+    data_venc = models.DateField(auto_now_add=False, blank=True, null=False, verbose_name='Data de vencimento')
+    valor_pagar = models.DecimalField(max_digits=12, decimal_places=2, null=False, blank=False, verbose_name='Valor a pagar')
+
+    class Meta:
+        verbose_name = 'Contas a pagar'
+        verbose_name_plural = 'Contas a Pagar'
+
