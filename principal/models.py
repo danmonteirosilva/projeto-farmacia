@@ -101,3 +101,17 @@ class Contas_a_pagar(models.Model):
         verbose_name = 'Contas a pagar'
         verbose_name_plural = 'Contas a Pagar'
 
+
+class Entregador(models.Model):
+    nome = models.CharField(max_length=255, blank=False, null=False, verbose_name='Nome do Entregador')
+    rg = models.CharField(max_length=15, blank=False, null=False, verbose_name='RG')
+    cpf = models.CharField(max_length=15, blank=False, null=False, verbose_name='CPF')
+    data_nascimento = models.DateField(auto_now_add=True, blank=True, null=False, verbose_name='Data da nascimento')
+    endereco = models.CharField(max_length=255, null=False, blank=False, verbose_name='Endereço')
+    telefone = models.CharField(max_length=12, blank=False, null=False, verbose_name='Telefone')
+    cep = models.CharField(max_length=15, blank=False, null=False, verbose_name='CEP')
+    email = models.CharField(max_length=255, blank=False, null=False, verbose_name='E-mail')
+
+    class Meta:
+        verbose_name_plural = 'Entregadores'
+
