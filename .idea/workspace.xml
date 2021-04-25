@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd38bcbf-64db-44d8-8d06-95929ed87548" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/principal/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/principal/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/principal/migrations/0004_cliente.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/principal/migrations/0005_auto_20210418_1920.py" beforeDir="false" afterPath="$PROJECT_DIR$/principal/migrations/0005_auto_20210418_1920.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/principal/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/principal/models.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
@@ -21,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/principal/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="83" column="86" lean-forward="true" selection-start-line="83" selection-start-column="86" selection-end-line="83" selection-end-column="86" />
+            <state relative-caret-position="294">
+              <caret line="101" column="46" lean-forward="true" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -30,11 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/principal/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="116" selection-start-line="1" selection-start-column="116" selection-end-line="1" selection-end-column="116" />
             </state>
           </provider>
         </entry>
@@ -293,18 +287,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/principal/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="116" selection-start-line="1" selection-start-column="116" selection-end-line="1" selection-end-column="116" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/principal/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="83" column="86" lean-forward="true" selection-start-line="83" selection-start-column="86" selection-end-line="83" selection-end-column="86" />
+        <state relative-caret-position="294">
+          <caret line="101" column="46" lean-forward="true" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
         </state>
       </provider>
     </entry>
