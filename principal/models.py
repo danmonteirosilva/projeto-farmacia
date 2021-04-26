@@ -41,6 +41,8 @@ class Produto(models.Model):
     estoque = models.IntegerField(blank=True, null=False, default=0, verbose_name='Quantidade no Estoque')
     valor = models.DecimalField(max_digits=6, decimal_places=2, blank=False, null=False)
     generico = models.CharField(max_length=3, blank=False, null=False, verbose_name='O medicamento é genérico?')
+    fornecedor = models.ForeignKey('Fornecedor', on_delete=models.DO_NOTHING, default=1, verbose_name='Fornecedor')
+    fabricante = models.ForeignKey('Fabricante', on_delete=models.DO_NOTHING, default=1, verbose_name='Fabricante')
 
 
 class Venda(models.Model):
@@ -55,6 +57,7 @@ class Venda(models.Model):
     qtd_itens = models.IntegerField(blank=True, null=False, default=0, verbose_name='Quantidade de Itens Vendidos')
     produtos = models.ManyToManyField('Produto')
     cliente = models.ForeignKey('Cliente', on_delete=models.DO_NOTHING, default=1, verbose_name='Cliente')
+    fm_pagamento = models.ForeignKey('Forma_de_pagamento', on_delete=models.DO_NOTHING, default=1, verbose_name='Forma de Pagamento')
 
 class Receita(models.Model):
     descricao = models.CharField(max_length=255, null=False, blank=False, verbose_name='Descrição')
@@ -135,3 +138,21 @@ class Repositorio_contrato(models.Model):
     class Meta:
         verbose_name = 'Contrato'
         verbose_name_plural = 'Repositório de Contratos'
+
+
+class Fabricante(models.Model):
+    cnpj = models.CharField(max_length=14, blank=False, null=False, verbose_name='CNPJ')
+    nome_fantasia = models.CharField(max_length=255, blank=False, null=False, verbose_name='Nome Fantasia')
+    razao_social = models.CharField(max_length=255, blank=False, null=False, verbose_name='Razão Social')
+    endereco = models.CharField(max_length=255, null=False, blank=False, verbose_name='Endereço')
+    telefone = models.CharField(max_length=12, blank=False, null=False, verbose_name='Telefone')
+    cep = models.CharField(max_length=15, blank=False, null=False, verbose_name='CEP')
+    email = models.CharField(max_length=255, blank=False, null=False, verbose_name='E-mail')
+    descricao = models.TextField(blank=True, null=True, verbose_name="Descrição")
+
+
+class Forma_de_pagamento(models.Model):
+    tipo = models.CharField(max_length=14, blank=False, null=False, verbose_name='Tipo')
+
+    class Meta:
+        verbose_name = 'Forma de Pagamento'
