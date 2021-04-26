@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd38bcbf-64db-44d8-8d06-95929ed87548" name="Default Changelist" comment="renomeando o arquivo balconista para cadastrar_balconista">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/principal/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/principal/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/principal/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/principal/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/principal/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/principal/views.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/principal/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="157" column="43" lean-forward="true" selection-start-line="157" selection-start-column="43" selection-end-line="157" selection-end-column="43" />
+            <state relative-caret-position="-1845">
+              <caret line="34" column="92" lean-forward="true" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -429,8 +426,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/principal/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="157" column="43" lean-forward="true" selection-start-line="157" selection-start-column="43" selection-end-line="157" selection-end-column="43" />
+        <state relative-caret-position="-1845">
+          <caret line="34" column="92" lean-forward="true" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
         </state>
       </provider>
     </entry>
