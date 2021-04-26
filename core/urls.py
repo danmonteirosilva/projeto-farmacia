@@ -20,6 +20,6 @@ from principal import urls as urls_principal
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('principal', include(urls_principal)),
+    path('', include(urls_principal)),
 
 ]

@@ -2,49 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd38bcbf-64db-44d8-8d06-95929ed87548" name="Default Changelist" comment="renomeando o arquivo balconista para cadastrar_balconista">
-      <change beforePath="$PROJECT_DIR$/principal/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/principal/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/principal/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/principal/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/principal/templates/cadastrar/clientes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/principal/templates/cadastrar/farmaceutico.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/principal/templates/cadastrar/produtos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/principal/templates/cadastrar/cadastra_balconista.html" beforeDir="false" afterPath="$PROJECT_DIR$/principal/templates/cadastrar/balconista.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/principal/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/principal/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/principal/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/principal/views.py" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/venv/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/principal/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="136" column="56" lean-forward="true" selection-start-line="136" selection-start-column="56" selection-end-line="136" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/principal/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-250">
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/principal/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -131,22 +102,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fan2021" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -234,11 +193,16 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Robertokalleb-master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
               </option>
             </State>
           </value>
@@ -259,6 +223,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
