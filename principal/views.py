@@ -1,7 +1,12 @@
 from .models import Balconista, Farmaceutico
 from django.views.generic import CreateView
 from django.views.generic import ListView
+from django.views.generic import TemplateView
 from django.urls import reverse_lazy
+
+
+class IndexTemplateView(TemplateView):
+    template_name = 'index.html'
 
 
 class BalconistaCreateView(CreateView):

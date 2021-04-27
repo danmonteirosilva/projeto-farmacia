@@ -1,6 +1,7 @@
 from django.urls import path
 from .views import BalconistaCreateView
 from .views import BalconistaListView, FarmaceuticoCreateView, ClienteCreateView, ProdutosCreateView
+from .views import IndexTemplateView
 
 urlpatterns = [
     path('cadastrar/balconista', BalconistaCreateView.as_view(), name='cadastrar_balconista'),
@@ -8,4 +9,5 @@ urlpatterns = [
     path('cadastrar/produtos', ProdutosCreateView.as_view(), name='cadastrar_produtos'),
     path('cadastrar/clientes', ClienteCreateView.as_view(), name='cadastrar_clientes'),
     path('listar/balconista', BalconistaListView.as_view(), name='listar_balconista'),
+    path('index/', IndexTemplateView.as_view(), name='inicio')
 ]
