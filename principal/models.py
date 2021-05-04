@@ -11,6 +11,9 @@ class Balconista(models.Model):
     cep = models.CharField(max_length=15, blank=False, null=False, verbose_name='CEP')
     email = models.CharField(max_length=255, blank=False, null=False, verbose_name='E-mail')
 
+    def __str__(self):
+        return self.nome
+
 
 class Farmaceutico(models.Model):
     nome = models.CharField(max_length=255, blank=False, null=False, verbose_name='Nome do Balconista')
@@ -22,6 +25,9 @@ class Farmaceutico(models.Model):
     cep = models.CharField(max_length=15, blank=False, null=False, verbose_name='CEP')
     crf = models.CharField(max_length=15, blank=False, null=False, verbose_name='CRF')
     email = models.CharField(max_length=255, blank=False, null=False, verbose_name='E-mail')
+
+    def __str__(self):
+        return self.nome
 
 
 class Cliente(models.Model):
@@ -35,12 +41,19 @@ class Cliente(models.Model):
     email = models.CharField(max_length=255, blank=False, null=False, verbose_name='E-mail')
     foto = models.FileField(upload_to='foto de cadastro', verbose_name='Foto de cadastro do cliente')
 
+    def __str__(self):
+        return self.nome
+
+
 class Produto(models.Model):
     nome_produto = models.CharField(max_length=255, blank=False, null=False, verbose_name='Nome do Produto')
     foto = models.FileField(upload_to='foto de cadastro', verbose_name='Foto do produto')
     estoque = models.IntegerField(blank=True, null=False, default=0, verbose_name='Quantidade no Estoque')
     valor = models.DecimalField(max_digits=6, decimal_places=2, blank=False, null=False)
     generico = models.CharField(max_length=3, blank=False, null=False, verbose_name='O medicamento é genérico?')
+
+    def __str__(self):
+        return self.nome_produto + '.valor' + str(self.valor)
 
 
 class Venda(models.Model):
@@ -55,6 +68,8 @@ class Venda(models.Model):
     qtd_itens = models.IntegerField(blank=True, null=False, default=0, verbose_name='Quantidade de Itens Vendidos')
     produtos = models.ManyToManyField('Produto')
     cliente = models.ForeignKey('Cliente', on_delete=models.DO_NOTHING, default=1, verbose_name='Cliente')
+
+
 
 class Receita(models.Model):
     descricao = models.CharField(max_length=255, null=False, blank=False, verbose_name='Descrição')
@@ -95,7 +110,8 @@ class Pagamento(models.Model):
 class Contas_a_pagar(models.Model):
     titulo = models.CharField(max_length=255, null=False, blank=False, verbose_name='Título')
     data_venc = models.DateField(auto_now_add=False, blank=True, null=False, verbose_name='Data de vencimento')
-    valor_pagar = models.DecimalField(max_digits=12, decimal_places=2, null=False, blank=False, verbose_name='Valor a pagar')
+    valor_pagar = models.DecimalField(max_digits=12, decimal_places=2, null=False, blank=False,
+                                      verbose_name='Valor a pagar')
 
     class Meta:
         verbose_name = 'Contas a pagar'

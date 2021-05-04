@@ -1,86 +1,57 @@
 {% load static %}
 
-<!DOCTYPE html>
-<html>
-    <head>
-    <!-- Title -->
-    <title>
-      {% block title %}Sistema de Gerenciamento de Funcionários{% endblock %}
-    </title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="{% static 'website/img/favicon.png' %}" type="image/png">
-
-    <!-- Arquivos CSS -->
-    <link rel="stylesheet"  type="text/css" href="{% static 'css/bootstrap.min.css' %}"
-
-    <!-- Bloco de Estilos -->
-    {% block styles %}{% endblock %}
-  </head>
-
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-
-          <img src="{% static 'img/farmacia.png' %}" height='45px'>
-
-        <button class="navbar-toggler" type="button"
-            data-toggle="collapse" data-target="#conteudo-navbar"
-            aria-controls="conteudo-navbar" aria-expanded="false"
-            aria-label="Ativar navegação">
-            <span class="navbar-toggler-icon"></span>
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap..min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">GESTÃO PHARMA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="conteudo-navbar">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">Página Inicial</li>
-                <li class="nav-item">Funcionários</li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link"  href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vendas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Funcionários</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Caixa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Relátorios</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
+    <div class="cotainer">
+    <p>Barra de navegação </p>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <P>GESTÃO PHARMA</P>
+    </footer>
+    </div>
 
-    <!-- Bloco de conteúdo -->
-<br>
-{% block conteudo %}
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Cadastrar Funcionário</h5>
-          <p class="card-text">
-            Cadastre aqui um novo <code>Funcionário</code>.
-          </p>
-          <a href=""
-             class="btn btn-primary">
-            Novo Funcionário
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Lista de Funcionários</h5>
-          <p class="card-text">
-            Veja aqui a lista de <code>Funcionários</code> cadastrados.
-          </p>
-          <a href=""
-             class="btn btn-primary">
-            Vá para Lista
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-{% endblock %}
-    <!-- Arquivos necessários para o Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <script src="{% static 'js/jquery-3.6.0.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-
-    <!-- Bloco de scripts -->
-    {% block scripts %}{% endblock %}
-
-  </body>
+</body>
 </html>
