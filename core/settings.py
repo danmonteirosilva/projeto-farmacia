@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 DEFAULT_APPS = [
-    'django.contrib.admin',
+    
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -46,6 +46,9 @@ MY_APPS = [
 THIRDS_APPS = [
     'bootstrapform',
     'bootstrap4',
+    'adminlte3',
+    'adminlte3_theme',
+    'django.contrib.admin',
 
 
 ]
@@ -135,11 +138,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, "/static/")
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media'
 
-STATICFILES_DIRS = [
+#STATICFILES_DIRS = [
 
-    os.path.join(BASE_DIR, " static"),
-    'var/www/static',
-]
+    #os.path.join(BASE_DIR, " static"),
+    #'var/www/static',
+#]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

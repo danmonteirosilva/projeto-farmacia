@@ -1,19 +1,11 @@
-{% extends 'base.html' %}
-
-
-{% block title %} Página de cadastrar balconista {% endblock title %}
-
-{% block content %}
-<div class="offset-1 col-10 list-div">
-    <h1>Cadastrar balconista</h1>
-    <div class="col-2 add-div">
-        <i class="fas fa-plus"></i>Adicionar
-    </div>
-    <div class=" col-9 search-div">
-        <input type="text" id="search" name="search" placeholder="Buscar!">
-        <i class="fas fa-search"></i>
-
-    </div>
-</div>
-
-{% endblock %}
+{% extends 'adminlte/base.html' %}
+{% load bootstrap %}
+{% block content  %}
+<h1>Cadastrar Balconista</h1>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form|bootstrap }}
+    <input class="btn btn-warning" type="submit" value="Cadastrar">
+    <input class="btn btn-warning" type="submit" value="Atualizar">
+</form>
+{% endblock %} 
