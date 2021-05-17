@@ -1,0 +1,62 @@
+{% extends 'adminlte/base.html' %}
+
+{% block content %}
+    <h1>Listagem de Farmaceutico</h1>
+    <a class="btn btn-success btn-sm" href="{% url 'cadastrar_farmaceutico' %}"><i class="fa fa fa-plus"></i>Cadastrar Farmaceutico</a>
+    
+    <table class="table table-striped">
+        <thead>
+            <th>ID</th>
+            <th>NOME</th>
+            <th>RG</th>
+            <th>CPF</th>
+            <th>ENDEREÇO</th>
+            <th>TELEFONE</th>
+            <th>CEP</th>
+            <th>DATA NASCIMNETO</th>
+            <th>CRF</th>
+        </thead>
+        <tbody>
+    {% for obj_farmaceutico in object_list %}
+            <tr>
+                <td>{{obj_farmaceutico.pk}}</td>
+                {% if obj_farmaceutico.nome|length > 30 %}
+                <td>{{obj_farmaceutico.nome|slice:":30"}}...</td>
+                {% else %}
+                <td>{{obj_farmaceutico.nome|slice:":30"}}</td>
+                {% endif %}
+                <td>{{obj_farmaceutico.rg}}</td>
+                <td>{{obj_farmaceutico.cpf}}</td>
+                <td>{{obj_farmaceutico.endereco}}</td>
+                <td>{{obj_farmaceutico.telefone}}</td>
+                <td>{{obj_farmaceutico.cep}}</td>
+                <td>{{obj_farmaceutico.data_nascimento}}</td>
+                <td>{{obj_farmaceutico.crf}}</td>
+            </tr>
+    {% empty %}
+        <h3>Desculpe, você ainda nao possui vendas cadastradas em seu sistema.
+            <br/>:'(</h3>
+    {% endfor %}
+        </tbody>
+    </table>
+
+    {% if is_paginated %}
+        <div class="pagination">
+            <span class="step-links">
+                {% if page_obj.has_previous %}
+                <a class="btn btn-default btn-sm" href="?page=1">&laquo; Primeira Página </a>
+                <a class="btn btn-primary btn-sm" href="?page={{ page_obj.previous_page_number }}"><i class="fa fa-arrow-left"></i> Página Anterior </a>
+                {% endif %}
+
+                <span class="current">
+                    | Página {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}. |
+                </span>
+
+                {% if page_obj.has_next %}
+                    <a class="btn btn-primary btn-sm" href="?page={{ page_obj.next_page_number }}">Próxima Página <i class="fa fa-arrow-right"></i></a>
+                    <a class="btn btn-default btn-sm" href="?page={{ page_obj.paginator.num_pages }}">| Última Página &raquo;</a>
+                {% endif %}
+            </span>
+        </div>
+    {% endif %}
+{% endblock %}

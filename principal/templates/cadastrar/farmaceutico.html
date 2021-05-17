@@ -2,17 +2,16 @@
 {% load bootstrap %}
 {% block title %}Página de Cadastro {% endblock %}
 {% block content  %}
-<h1>Cadastrar Balconista </h1>
+<h1>Cadastrar Farmaceutico </h1>
  <div class="form-group">
  <div class="col-sm-10">
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form|bootstrap }}
-        <a class="btn btn-success btn-sm" href="{% url 'listar_balconista' %}">Voltar</a>   
+        <a class="btn btn-success btn-sm" href="{% url 'listar_farmaceutico' %}">Voltar</a>   
         <input class="btn btn-primary btn-sm" type="submit" value="Cadastrar">
         <input class="btn btn-warning btn-sm" type="submit" value="Atualizar">   
       </form>  
    
     
 {% endblock %}
- 
