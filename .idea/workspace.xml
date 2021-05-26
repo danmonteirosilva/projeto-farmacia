@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd38bcbf-64db-44d8-8d06-95929ed87548" name="Default Changelist" comment="desenvolvido form.py e os templates  de atualizar balconista , famaceutico, cliente" />
+    <list default="true" id="bd38bcbf-64db-44d8-8d06-95929ed87548" name="Default Changelist" comment="desenvolvido form.py e os templates  de atualizar balconista , famaceutico, cliente">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/principal/templates/cadastrar/balconista.html" beforeDir="false" afterPath="$PROJECT_DIR$/principal/templates/cadastrar/balconista.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/principal/templates/cadastrar/cliente.html" beforeDir="false" afterPath="$PROJECT_DIR$/principal/templates/cadastrar/cliente.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/principal/templates/cadastrar/farmaceutico.html" beforeDir="false" afterPath="$PROJECT_DIR$/principal/templates/cadastrar/farmaceutico.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/principal/templates/listar/cliente.html" beforeDir="false" afterPath="$PROJECT_DIR$/principal/templates/listar/cliente.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/principal/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/principal/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +38,11 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/principal/urls.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/principal/views.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/principal/models.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -190,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621991924916</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="desenvolvido form.py e os templates  de atualizar balconista , famaceutico, cliente">
+      <created>1621992597096</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1621992597096</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -239,7 +259,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Robertokalleb-master" />
+                        <option value="origin/Robertokalleb-master" />
                       </list>
                     </value>
                   </entry>

@@ -10,7 +10,8 @@ class ClienteCreateView(CreateView):
     template_name = 'cadastrar/cliente.html'
 
     def get_success_url(self):
-        return reverse_lazy('cadastrar_cliente')
+        messages.success(self.request, 'cadastrado com suceso!' )
+        return reverse_lazy("cadastrar_cliente")
 
 
 class ClienteListView(ListView):
