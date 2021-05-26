@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd38bcbf-64db-44d8-8d06-95929ed87548" name="Default Changelist" comment="adcionando docker ao projeto">
+    <list default="true" id="bd38bcbf-64db-44d8-8d06-95929ed87548" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data/db/pg_stat/global.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/principal/form.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/principal/templates/atualizar/balconista.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/principal/templates/atualizar/cliente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/principal/templates/atualizar/farmaceutico.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/principal/templates/cadastrar/cliente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/principal/templates/listar/cliente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements-dev.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/global/pg_control" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/db/pg_stat_tmp/global.stat" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/pg_stat_tmp/global.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/pg_wal/000000010000000000000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/postmaster.pid" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/postmaster.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/principal/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/principal/templates/cadastrar/balconista.html" beforeDir="false" afterPath="$PROJECT_DIR$/principal/templates/cadastrar/balconista.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/principal/templates/listar/balconista.html" beforeDir="false" afterPath="$PROJECT_DIR$/principal/templates/listar/balconista.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/principal/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/principal/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/principal/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/principal/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>

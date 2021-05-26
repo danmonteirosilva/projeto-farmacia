@@ -1,0 +1,17 @@
+{% extends 'adminlte/base.html' %}
+{% load bootstrap %}
+{% block title %}Página de Cadastro {% endblock %}
+{% block content  %}
+<h1>Cadastrar Cliente </h1>
+ <div class="form-group">
+ <div class="col-sm-10">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|bootstrap }}
+        <a class="btn btn-success btn-sm" href="{% url 'listar_farmaceutico' %}">Voltar</a>
+        <input class="btn btn-primary btn-sm" type="submit" value="Cadastrar">
+        <input class="btn btn-warning btn-sm" type="submit" value="Atualizar">
+      </form>
+
+
+{% endblock %}

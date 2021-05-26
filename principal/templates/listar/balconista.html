@@ -13,7 +13,7 @@
             <th>ENDEREÇO</th>
             <th>TELEFONE</th>
             <th>CEP</th>
-            <th>DATA NASCIMNETO</th>
+            <th>DATA NASCIMENTO</th>
         </thead>
         <tbody>
     {% for obj_balconista in object_list %}
@@ -30,6 +30,14 @@
                 <td>{{obj_balconista.telefone}}</td>
                 <td>{{obj_balconista.cep}}</td>
                 <td>{{obj_balconista.data_nascimento}}</td>
+                <td>
+                    <center>
+                        <a target="_blank" href="#"><i class="fa fa-file-pdf" rel="tooltip" title="Visualizar Recibo" ></i></a>
+                    </center>
+                </td>
+                <td>
+
+                </td>
             </tr>
     {% empty %}
         <h3>Desculpe, você ainda nao possui vendas cadastradas em seu sistema.

@@ -46,9 +46,11 @@ MY_APPS = [
 THIRDS_APPS = [
     'bootstrapform',
     'bootstrap4',
+    'easy_pdf',
     'adminlte3',
     'adminlte3_theme',
     'django.contrib.admin',
+
 
 
 ]

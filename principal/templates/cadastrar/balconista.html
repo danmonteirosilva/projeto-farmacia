@@ -8,10 +8,10 @@
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form|bootstrap }}
-        <a class="btn btn-success btn-sm" href="{% url 'listar_balconista' %}">Voltar</a>   
+        <a class="btn btn-success btn-sm" href="{% url 'listar_balconista' %}">Voltar</a>
         <input class="btn btn-primary btn-sm" type="submit" value="Cadastrar">
-        <input class="btn btn-warning btn-sm" type="submit" value="Atualizar">   
-      </form>  
+        <input class="btn btn-warning btn-sm" type="submit" value="Atualizar">
+      </form>
    
     
 {% endblock %}
