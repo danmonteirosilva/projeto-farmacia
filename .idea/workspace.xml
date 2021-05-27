@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd38bcbf-64db-44d8-8d06-95929ed87548" name="Default Changelist" comment="desenvolvido form.py e os templates  de atualizar balconista , famaceutico, cliente">
+    <list default="true" id="bd38bcbf-64db-44d8-8d06-95929ed87548" name="Default Changelist" comment="resolvendo no form cliente">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/principal/templates/cadastrar/balconista.html" beforeDir="false" afterPath="$PROJECT_DIR$/principal/templates/cadastrar/balconista.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/principal/templates/cadastrar/cliente.html" beforeDir="false" afterPath="$PROJECT_DIR$/principal/templates/cadastrar/cliente.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/principal/templates/cadastrar/farmaceutico.html" beforeDir="false" afterPath="$PROJECT_DIR$/principal/templates/cadastrar/farmaceutico.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/principal/templates/listar/cliente.html" beforeDir="false" afterPath="$PROJECT_DIR$/principal/templates/listar/cliente.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/principal/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/principal/views.py" afterDir="false" />
     </list>
@@ -24,6 +20,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/Robertokalleb-master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -210,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621992597096</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="resolvendo no form cliente">
+      <created>1622072912578</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1622072912579</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -259,7 +275,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/Robertokalleb-master" />
+                        <option value="Robertokalleb-master" />
                       </list>
                     </value>
                   </entry>
@@ -297,7 +313,8 @@
     <MESSAGE value="criado os templates base.html e balconista.html&#10;desenvolvendo a folha de stilo do css e template cadastrar balconista.html" />
     <MESSAGE value="adcionando docker ao projeto" />
     <MESSAGE value="desenvolvido form.py e os templates  de atualizar balconista , famaceutico, cliente" />
-    <option name="LAST_COMMIT_MESSAGE" value="desenvolvido form.py e os templates  de atualizar balconista , famaceutico, cliente" />
+    <MESSAGE value="resolvendo no form cliente" />
+    <option name="LAST_COMMIT_MESSAGE" value="resolvendo no form cliente" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gestao_farmacia/settings.py" />
