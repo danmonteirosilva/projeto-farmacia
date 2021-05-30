@@ -1,68 +1,22 @@
-{% extends 'adminlte/base.html' %}
-
+{% extends 'admin/base.html' %}
 {% block content %}
-    <h1>Listagem de Balconista</h1>
-    <a class="btn btn-success btn-sm" href="{% url 'cadastrar_balconista' %}"><i class="fa fa fa-plus"></i>Cadastrar Balconista</a>
-    
-    <table class="table table-striped">
-        <thead>
-            <th>ID</th>
-            <th>NOME</th>
-            <th>RG</th>
-            <th>CPF</th>
-            <th>ENDEREÇO</th>
-            <th>TELEFONE</th>
-            <th>CEP</th>
-            <th>DATA NASCIMENTO</th>
-        </thead>
-        <tbody>
-    {% for obj_balconista in object_list %}
+<h1>Lista de Balconista</h1>
+    <table>
+       {% for obj_balconista in object_list %}
             <tr>
-                <td>{{obj_balconista.pk}}</td>
-                {% if obj_balconista.nome|length > 30 %}
-                <td>{{obj_balconista.nome|slice:":30"}}...</td>
-                {% else %}
-                <td>{{obj_balconista.nome|slice:":30"}}</td>
-                {% endif %}
-                <td>{{obj_balconista.rg}}</td>
-                <td>{{obj_balconista.cpf}}</td>
-                <td>{{obj_balconista.endereco}}</td>
-                <td>{{obj_balconista.telefone}}</td>
-                <td>{{obj_balconista.cep}}</td>
-                <td>{{obj_balconista.data_nascimento}}</td>
-                <td>
-                    <center>
-                        <a target="_blank" href="#"><i class="fa fa-file-pdf" rel="tooltip" title="Visualizar Recibo" ></i></a>
-                    </center>
-                </td>
-                <td>
-
-                </td>
+                <td><b> ID </b>{{obj_balconista.pk}}</td>
+                <td><b>Nome: </b>{{obj_balconista.nome}}</td>
+                <td><b>Rg: </b>{{obj_balconista.rg}}</td>
+                <td><b>CPF:</b>{{obj_balconista.cpf}}</td>
+                <td><b>Endereço:</b>{{obj_balconista.endereco</td>
+                <td><b>Telefone:</b>{{obj_balconista.telefone</td>
+                <td><b>CEP:</b>{{obj_balconista.cep</td>
+                <td><b>E-mail:</b>{{obj_balconista.email</td>
+                <td><b>Data da Nascimento: </b>{{obj_balconista.data_nascimento}}</td>
+                <td><b>Cliente: </b>{{obj_balconista.cliente}}</td>
             </tr>
-    {% empty %}
-        <h3>Desculpe, você ainda nao possui vendas cadastradas em seu sistema.
-            <br/>:'(</h3>
-    {% endfor %}
-        </tbody>
+        {% empty %}
+           <h3>Desculpe, você não possui vendas cadastradas em seu sistema.</br></h3>
+       {% endfor %}
     </table>
-
-    {% if is_paginated %}
-        <div class="pagination">
-            <span class="step-links">
-                {% if page_obj.has_previous %}
-                <a class="btn btn-default btn-sm" href="?page=1">&laquo; Primeira Página </a>
-                <a class="btn btn-primary btn-sm" href="?page={{ page_obj.previous_page_number }}"><i class="fa fa-arrow-left"></i> Página Anterior </a>
-                {% endif %}
-
-                <span class="current">
-                    | Página {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}. |
-                </span>
-
-                {% if page_obj.has_next %}
-                    <a class="btn btn-primary btn-sm" href="?page={{ page_obj.next_page_number }}">Próxima Página <i class="fa fa-arrow-right"></i></a>
-                    <a class="btn btn-default btn-sm" href="?page={{ page_obj.paginator.num_pages }}">| Última Página &raquo;</a>
-                {% endif %}
-            </span>
-        </div>
-    {% endif %}
 {% endblock %}

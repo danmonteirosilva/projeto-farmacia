@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 DEFAULT_APPS = [
-    
+
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -40,16 +40,17 @@ DEFAULT_APPS = [
 
 ]
 MY_APPS = [
-    'principal',
+
+    'principal.apps.PrincipalConfig',
 ]
 
 THIRDS_APPS = [
     'bootstrapform',
-    'bootstrap4',
-    'easy_pdf',
     'adminlte3',
     'adminlte3_theme',
+    'bootstrap4',
     'django.contrib.admin',
+    'easy_pdf',
 
 
 
@@ -72,7 +73,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -93,16 +94,22 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'fan2021',
-        'USER': 'postgres',
-        'PASSWORD': '12345',
-        'HOST': 'db',
-        'PORT': 5432,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-
+'''
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': '12345',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+'''
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -129,11 +136,12 @@ LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'America/maceio'
 
-USE_TZ = True
-
 USE_I18N = True
 
 USE_L10N = True
+
+USE_TZ = True
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
@@ -142,7 +150,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, "/static/")
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media'
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

@@ -14,6 +14,16 @@ class ClienteCreateView(CreateView):
         return reverse_lazy("cadastrar_cliente")
 
 
+class ClienteUpdateView(UpdateView):
+    model = Cliente
+    template_name = 'atualizar/cliente.html'
+
+    fields = '__all__'
+
+    def get_success_url(self):
+        return reverse_lazy('listar_Cliente')
+
+
 class ClienteListView(ListView):
     model = Cliente
     template_name = 'listar/Cliente.html'
@@ -80,4 +90,3 @@ class FarmaceuticoUpdateView(UpdateView):
 
     def get_success_url(self):
         return reverse_lazy('listar_farmaceutico')
-
